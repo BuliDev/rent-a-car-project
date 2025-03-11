@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  return <div className="text-3xl font-bold underline">Rent a Car</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
