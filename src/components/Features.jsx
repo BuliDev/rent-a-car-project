@@ -7,7 +7,7 @@ const Features = () => {
       <div className="max-w-[1296px] mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
-            <div key={feature.id} className="max-w-[357px] text-center">
+            <div key={feature.id} className="max-w-[357px] text-center mx-auto">
               <img
                 src={feature.icon}
                 alt={feature.title}
