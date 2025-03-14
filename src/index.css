@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    max-width: 1296px;
+    margin: 0 auto;
 }
 
 .hero-section {
@@ -12,3 +14,16 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
   }
+
+.facts-bg {
+    background-image: url('/src/assets/factsBgCar.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+
+  

@@ -31,7 +31,7 @@ const BookingForm = () => {
           />
         </div>
 
-        <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
+        <button className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition cursor-pointer">
           Book Now
         </button>
       </form>

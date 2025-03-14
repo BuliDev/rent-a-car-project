@@ -5,7 +5,7 @@ import phoneIcon from "../assets/phoneIcon.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="px-6 lg:px-0 flex justify-between items-center max-w-[1296px] mx-auto py-6 ">
+    <nav className="px-6 lg:px-0 flex justify-between items-center py-6 ">
       <div className="flex items-center space-x-2">
         <img src={logo} alt="Car Rental Logo" className="w-10 h-10" />
         <h1 className="text-xl font-bold text-gray-900">Car Rental</h1>

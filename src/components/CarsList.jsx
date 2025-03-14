@@ -7,7 +7,7 @@ import snowIcon from "../assets/snowIcon.png";
 
 const CarsList = () => {
   return (
-    <section className="max-w-[1296px] mx-auto py-16 px-6 lg:px-0">
+    <section className="p-15 lg:px-0">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl font-bold">Choose The Car That Suits You</h2>
         <a
@@ -69,7 +69,7 @@ const CarsList = () => {
               </div>
             </div>
 
-            <button className="bg-[#5937E0] text-white py-2 px-6 mt-8 rounded-md w-full hover:bg-[#4C2F9B] cursor-pointer">
+            <button className="bg-[#5937E0] text-white py-2 px-6 mt-8 rounded-md w-full hover:bg-[#4C2F9B] cursor-pointer transition">
               View Details
             </button>
           </div>

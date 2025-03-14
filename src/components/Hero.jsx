@@ -3,7 +3,7 @@ import BookingForm from "./BookingForm";
 
 const Hero = () => {
   return (
-    <section className="max-w-[1296px] mx-auto p-[78px] bg-[#5937E0] rounded-4xl grid grid-cols-1 lg:grid-cols-[686px_auto] gap-6 items-center text-center lg:text-left space-y-9 hero-section">
+    <section className="p-[78px] bg-[#5937E0] rounded-4xl grid grid-cols-1 lg:grid-cols-[686px_auto] gap-6 items-center text-center lg:text-left space-y-9 hero-section">
       <div className="max-w-[686px] w-full mx-auto">
         <h1 className="text-5xl font-bold text-white leading-tight tracking-wider">
           Experience the road <br />
@@ -13,7 +13,7 @@ const Hero = () => {
           Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
           tristique et gravida. Quis nunc interdum gravida ullamcorper
         </p>
-        <button className="mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
+        <button className="mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition cursor-pointer">
           View all cars
         </button>
       </div>
