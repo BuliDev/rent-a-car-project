@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import CarsList from "./components/CarsList";
 import Facts from "./components/Facts";
+import DownloadApp from "./components/DownloadApp";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Features />
       <CarsList />
       <Facts />
+      <DownloadApp />
+      <Footer />
     </div>
   );
 };
