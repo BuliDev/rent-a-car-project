@@ -58,7 +58,7 @@ const FactCard = ({ icon, number, text }) => {
   return (
     <div
       ref={ref}
-      className="flex items-center gap-6 bg-white text-black p-4 max-w-[240px] text-left rounded-2xl"
+      className="flex items-center gap-6 bg-white text-black p-4 w-[240px] text-left rounded-2xl"
     >
       <div>
         <img src={icon} alt={text} className="bg-[#FF9E0C] p-4 rounded-xl" />

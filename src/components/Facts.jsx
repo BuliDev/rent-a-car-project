@@ -4,8 +4,8 @@ import FactCard from "./FactCard";
 
 const Facts = () => {
   return (
-    <section className="p-15 lg:px-0">
-      <div className="bg-[#5937E0] relative z-20 py-15 px-18 pb-30 rounded-3xl text-white text-center">
+    <section className="p-6 lg:p-15 lg:px-0">
+      <div className="bg-[#5937E0] relative z-20 p-6 lg:py-15 lg:px-18 pb-30 rounded-3xl text-white text-center">
         <div className="max-w-[756px] mx-auto">
           <h1 className="text-3xl font-bold tracking-wider mb-5">
             Facts In Numbers
@@ -18,7 +18,7 @@ const Facts = () => {
         </div>
         <div className="facts-bg"></div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
           {facts.map((fact) => (
             <FactCard key={fact.id} {...fact} />
           ))}

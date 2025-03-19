@@ -6,7 +6,7 @@ import DownloadButton from "./DownloadButton";
 
 const AppDownload = () => {
   return (
-    <section className="px-30">
+    <section className="p-7 lg:px-30">
       <div className="text-center flex flex-col lg:flex-row lg:text-left justify-between items-center">
         <div className="w-full lg:w-1/2">
           <h2 className="mb-10 text-3xl font-bold tracking-wider">
@@ -20,7 +20,7 @@ const AppDownload = () => {
             bibendum urna
           </p>
 
-          <div className="flex justify-center lg:justify-start space-x-10">
+          <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-5 items-center">
             <DownloadButton
               icon={appleIcon}
               title="App Store"
@@ -30,7 +30,7 @@ const AppDownload = () => {
             <DownloadButton
               icon={playIcon}
               title="Google Play"
-              subtitle="Download on the"
+              subtitle="GET IT ON"
               href="#"
             />
           </div>
@@ -40,7 +40,7 @@ const AppDownload = () => {
           <img
             src={iPhone}
             alt="iPhone"
-            className="w-full  absolute right-45 top-10 bg-white"
+            className="w-full absolute right-45 top-10 bg-white"
           />
         </div>
       </div>

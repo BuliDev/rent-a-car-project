@@ -7,7 +7,7 @@ import snowIcon from "../assets/snowIcon.png";
 
 const CarsList = () => {
   return (
-    <section className="p-15 lg:px-0">
+    <section className="p-6 lg:p-15 lg:px-0">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl font-bold">Choose The Car That Suits You</h2>
         <a
