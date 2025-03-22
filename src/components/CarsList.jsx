@@ -1,23 +1,24 @@
 import React from "react";
-import cars from "../data/carsData";
 import arrowRight from "../assets/arrow-right.png";
 import gearIcon from "../assets/gearShift.png";
 import gasStation from "../assets/gasStations.png";
 import snowIcon from "../assets/snowIcon.png";
 
-const CarsList = () => {
+const CarsList = ({ cars, hideHeader = false }) => {
   return (
     <section className="p-6 lg:p-15 lg:px-0">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-2xl font-bold">Choose The Car That Suits You</h2>
-        <a
-          href="#"
-          className="flex items-center space-x-2 hover:text-orange-500"
-        >
-          <span>View All</span>
-          <img src={arrowRight} alt="Arrow Right" />
-        </a>
-      </div>
+      {!hideHeader && (
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">Choose The Car That Suits You</h2>
+          <a
+            href="/vehicles"
+            className="flex items-center space-x-2 hover:text-orange-500"
+          >
+            <span>View All</span>
+            <img src={arrowRight} alt="Arrow Right" />
+          </a>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cars.map((car) => (

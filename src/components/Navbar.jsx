@@ -49,18 +49,18 @@ const Navbar = () => {
 
       <ul className="hidden md:flex space-x-8">
         <li>
-          <a href="#" className="text-gray-700 hover:text-orange-500">
+          <a href="/" className="text-gray-700 hover:text-orange-500">
             Home
+          </a>
+        </li>
+        <li>
+          <a href="/vehicles" className="text-gray-700 hover:text-orange-500">
+            Vehicles
           </a>
         </li>
         <li>
           <a href="#" className="text-gray-700 hover:text-orange-500">
             About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-gray-700 hover:text-orange-500">
-            Services
           </a>
         </li>
         <li>

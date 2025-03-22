@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="p-15">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-25 place-items-center md:place-items-stretch ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-25 place-items-center md:place-items-stretch">
           <div className="flex flex-col">
             <div className="flex items-center space-x-2 justify-center md:justify-start">
               <img src={logo} alt="Car Rental Logo" className="w-10 h-10" />

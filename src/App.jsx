@@ -1,23 +1,19 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import CarsList from "./components/CarsList";
-import Facts from "./components/Facts";
-import DownloadApp from "./components/DownloadApp";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Vehicles from "./pages/Vehicles";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Features />
-      <CarsList />
-      <Facts />
-      <DownloadApp />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/vehicles" element={<Vehicles />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 };
 
