@@ -3,6 +3,7 @@ import arrowRight from "../assets/arrow-right.png";
 import gearIcon from "../assets/gearShift.png";
 import gasStation from "../assets/gasStations.png";
 import snowIcon from "../assets/snowIcon.png";
+import { Link } from "react-router-dom";
 
 const CarsList = ({ cars, hideHeader = false }) => {
   return (
@@ -27,7 +28,7 @@ const CarsList = ({ cars, hideHeader = false }) => {
             className="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl"
           >
             <img
-              src={car.image}
+              src={car.images[0]}
               alt={car.name}
               className="w-full h-48 object-cover"
             />
@@ -70,9 +71,12 @@ const CarsList = ({ cars, hideHeader = false }) => {
               </div>
             </div>
 
-            <button className="bg-[#5937E0] text-white py-2 px-6 mt-8 rounded-md w-full hover:bg-[#4C2F9B] cursor-pointer transition">
+            <Link
+              to={`/car/${car.id}`}
+              className="bg-[#5937E0] text-white py-2 px-6 mt-8 rounded-md w-full hover:bg-[#4C2F9B] cursor-pointer block text-center transition"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         ))}
       </div>
