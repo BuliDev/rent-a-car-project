@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import CarsList from "../components/CarsList";
 import cars from "../data/carsData";
 
 const Vehicles = () => {
   const [filteredCars, setFilteredCars] = useState(cars);
   const [activeFilter, setActiveFilter] = useState("All");
+
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const carTypeFromUrl = params.get("carType");
+
+  useEffect(() => {
+    if (carTypeFromUrl) {
+      setActiveFilter(carTypeFromUrl);
+      setFilteredCars(cars.filter((car) => car.type === carTypeFromUrl));
+    } else {
+      setFilteredCars(cars);
+    }
+  }, [carTypeFromUrl]);
 
   const filterCars = (category) => {
     setActiveFilter(category);

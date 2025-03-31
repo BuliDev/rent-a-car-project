@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import phoneIcon from "../assets/phoneIcon.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,24 +50,22 @@ const Navbar = () => {
 
       <ul className="hidden md:flex space-x-8">
         <li>
-          <a href="/" className="text-gray-700 hover:text-orange-500">
+          <Link to="/" className="text-gray-700 hover:text-orange-500">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/vehicles" className="text-gray-700 hover:text-orange-500">
+          <Link to="/vehicles" className="text-gray-700 hover:text-orange-500">
             Vehicles
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="text-gray-700 hover:text-orange-500">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-gray-700 hover:text-orange-500">
-            Contact
-          </a>
+          <Link
+            to="/my-bookings"
+            className="text-gray-700 hover:text-orange-500"
+          >
+            My Bookings
+          </Link>
         </li>
       </ul>
 
@@ -80,24 +79,25 @@ const Navbar = () => {
       {isOpen && (
         <ul className="flex flex-col md:hidden space-y-4 absolute top-0 left-0 shadow-md py-4 px-6 w-full bg-white z-20">
           <li>
-            <a href="#" className="text-gray-700 hover:text-orange-500">
+            <Link to="/" className="text-gray-700 hover:text-orange-500">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-700 hover:text-orange-500">
-              About
-            </a>
+            <Link
+              to="/vehicles"
+              className="text-gray-700 hover:text-orange-500"
+            >
+              Vehicles
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-700 hover:text-orange-500">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-700 hover:text-orange-500">
-              Contact
-            </a>
+            <Link
+              to="/my-bookings"
+              className="text-gray-700 hover:text-orange-500"
+            >
+              My Bookings
+            </Link>
           </li>
         </ul>
       )}

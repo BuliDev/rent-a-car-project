@@ -1,5 +1,6 @@
 import React from "react";
 import BookingForm from "./BookingForm";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,9 +13,12 @@ const Hero = () => {
           Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
           tristique et gravida. Quis nunc interdum gravida ullamcorper
         </p>
-        <button className="mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition cursor-pointer">
+        <Link
+          to="/vehicles"
+          className="inline-block mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition cursor-pointer"
+        >
           View all cars
-        </button>
+        </Link>
       </div>
 
       <div className="flex justify-center w-full">
