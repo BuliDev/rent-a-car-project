@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import fbIcon from "../assets/fbIcon.png";
 import xIcon from "../assets/xIcon.png";
@@ -17,10 +18,13 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-25 place-items-center md:place-items-stretch">
           <div className="flex flex-col">
-            <div className="flex items-center space-x-2 justify-center md:justify-start">
+            <Link
+              to="/"
+              className="flex items-center space-x-2 justify-center md:justify-start"
+            >
               <img src={logo} alt="Car Rental Logo" className="w-10 h-10" />
               <h1 className="text-xl font-bold text-gray-900">Car Rental</h1>
-            </div>
+            </Link>
 
             <p className="text-sm mt-15 text-center md:text-left text-gray-600">
               Faucibus faucibus pellentesque dictum turpis. Id pellentesque
@@ -61,7 +65,7 @@ const Footer = () => {
               <div>
                 <p className="text-sm text-gray-600 tracking-wider">Address</p>
                 <p className="text-base font-semibold text-gray-900">
-                  Oxford Ave. Cary, NC 27511
+                  Oxford Ave NC 27511
                 </p>
               </div>
             </div>

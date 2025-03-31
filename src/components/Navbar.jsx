@@ -5,12 +5,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToDownload = () => {
+    const downloadSection = document.getElementById("download-section");
+
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav className="px-6 lg:px-0 flex justify-between items-center py-6">
-      <div className="flex items-center space-x-2">
+      <Link to="/" className="flex items-center space-x-2">
         <img src={logo} alt="Car Rental Logo" className="w-10 h-10" />
         <h1 className="text-xl font-bold text-gray-900">Car Rental</h1>
-      </div>
+      </Link>
 
       <button
         className="md:hidden text-gray-900 text-2xl z-30"
@@ -60,12 +68,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/my-bookings"
-            className="text-gray-700 hover:text-orange-500"
+          <button
+            onClick={scrollToDownload}
+            className="text-gray-700 hover:text-orange-500 cursor-pointer"
           >
-            My Bookings
-          </Link>
+            Download
+          </button>
         </li>
       </ul>
 
@@ -93,10 +101,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/my-bookings"
+              to="/download"
               className="text-gray-700 hover:text-orange-500"
             >
-              My Bookings
+              Download
             </Link>
           </li>
         </ul>

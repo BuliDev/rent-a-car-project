@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import CarsList from "../components/CarsList";
@@ -7,14 +7,16 @@ import DownloadApp from "../components/DownloadApp";
 import cars from "../data/carsData";
 
 const Home = () => {
-  const [newBooking, setNewBooking] = useState(null);
+  const downloadRef = useRef(null);
   return (
     <div>
-      <Hero onBookingAdded={setNewBooking} />
+      <Hero />
       <Features />
       <CarsList cars={cars} hideHeader={false} />
       <Facts />
-      <DownloadApp />
+      <div ref={downloadRef}>
+        <DownloadApp />
+      </div>
     </div>
   );
 };
